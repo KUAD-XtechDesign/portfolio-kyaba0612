@@ -39,7 +39,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.7;
+  opacity: 0.1;
+  transition-duration: 1s
 }
 
 img {
@@ -83,11 +84,11 @@ header a {
 
 header .inner {
   display: flex;
-  background-color: #fff;
+  /* background-color: #fff; */
   justify-content: space-between;
   padding: 15px 20px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35); */
+  /* border-radius: 4px; */
   margin: 20px;
 }
 
@@ -131,7 +132,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #ccc;
+  /* background-color: #1482e9; */
 }
 
 .top_eye_catch {
@@ -144,25 +145,28 @@ footer {
   align-items: center;
   justify-content: center;
   color: #fff;
+  text-shadow: #1482e9 2px 5px;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/bg.png);
   background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  text-shadow: #1482e9 2px 5px;
   font-weight: bold;
+  font-size: 40px;
 }
 
 .contents {
   max-width: 1000px;
-  min-height: 600px;
+  min-height: 250px;
   padding: 20px;
   margin: auto;
 }
@@ -175,7 +179,7 @@ footer {
 
 .thumb_list li {
   width: 25%;
-  height: 120px;
+  height: 170px;
   padding: 10px;
 }
 
@@ -219,7 +223,7 @@ report
 .report h1 {
   margin-bottom: 20px;
   padding-left: 10px;
-  border-left: 5px solid #ff9a02;
+  border-left: 5px solid #1482e9;
 }
 
 .ex_link {
@@ -270,7 +274,7 @@ cv
 .report h1 {
   margin-bottom: 20px;
   padding-left: 10px;
-  border-left: 5px solid #ff9a02;
+  border-left: 5px solid #1482e9;
 }
 
 .ex_link {
@@ -319,7 +323,7 @@ cv
   width: 14px;
   height: 14px;
   border-radius: 7px;
-  background-color: #ff9a02;
+  background-color: #1482e9;
   left: -7px;
   margin-right: 5px;
 }
@@ -329,24 +333,6 @@ cv
 }
 
 #case1 li .content {
-  flex: 1;
-}
-
-#case2 li {
-  display: flex;
-  background-color: rgb(0, 0, 255);
-  padding-bottom: 20px;
-}
-
-#case2 li .year {
-  background-color: rgb(255, 0, 0);
-  width: 100px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#case2 li .content {
-  background-color: rgb(0, 255, 0);
   flex: 1;
 }
 
