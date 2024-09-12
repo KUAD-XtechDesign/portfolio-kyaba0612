@@ -16,6 +16,7 @@ html,
 body {
   height: 100%;
   font-feature-settings: "palt";
+  font-style: italic;
   background-color: #fff;
   position: relative;
 }
@@ -23,7 +24,7 @@ body {
 body {
   font-size: 1.6rem;
   line-height: 1.6;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  Meiryo, sans-serif;
   color: #333333;
   letter-spacing: 0.05em;
 }
@@ -38,7 +39,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.7;
+  opacity: 0.1;
+  transition-duration: 1s
 }
 
 img {
@@ -62,6 +64,7 @@ li {
   }
 }
 
+
 /*======================================================
 header
 ======================================================*/
@@ -82,11 +85,11 @@ header a {
 
 header .inner {
   display: flex;
-  background-color: #fff;
+  /* background-color: #fff; */
   justify-content: space-between;
   padding: 15px 20px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35); */
+  /* border-radius: 4px; */
   margin: 20px;
 }
 
@@ -130,12 +133,12 @@ footer {
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #ccc;
+  /* background-color: #1482e9; */
 }
 
 .top_eye_catch {
   height: 500px;
-  background-image: url(../images/top.jpg);
+  background-image: url(../images/main.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -143,24 +146,14 @@ footer {
   align-items: center;
   justify-content: center;
   color: #fff;
+  text-shadow: #1482e9 2px 5px;
   font-weight: bold;
-}
-
-.report_eye_catch {
-  height: 300px;
-  background-image: url(../images/report.jpg);
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
+  font-size: 40px;
 }
 
 .contents {
   max-width: 1000px;
-  min-height: 600px;
+  min-height: 250px;
   padding: 20px;
   margin: auto;
 }
@@ -173,7 +166,7 @@ footer {
 
 .thumb_list li {
   width: 25%;
-  height: 120px;
+  height: 170px;
   padding: 10px;
 }
 
@@ -194,6 +187,175 @@ footer {
 /*======================================================
 report
 ======================================================*/
+.report {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+
+.report .outline {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.report .outline .pic {
+  width: 45%;
+  border: 3px solid #999;
+}
+
+.report .outline .txt {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.report h1 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #1482e9;
+}
+
+.ex_link {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  padding-left: 26px;
+}
+
+.ex_link::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: 3px solid #666;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/*======================================================
+cv
+======================================================*/
+
+.cv_eye_catch {
+  height: 300px;
+  background-image: url(../images/cv.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: #1482e9 2px 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.report {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+
+.report .outline {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.report .outline .pic {
+  width: 45%;
+  border: 3px solid #999;
+}
+
+.report .outline .txt {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.report h1 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #1482e9;
+}
+
+.ex_link {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  padding-left: 26px;
+}
+
+.ex_link::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: 3px solid #666;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#case1 {
+  border-left: 1px solid #000;
+  margin-left: 30px;
+}
+
+#case1 li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+#case1 li .year {
+  width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#case1 li .year::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #1482e9;
+  left: -7px;
+  margin-right: 5px;
+}
+
+#case1 li .date {
+  width: 60px;
+}
+
+#case1 li .content {
+  flex: 1;
+}
+
+/*======================================================
+works
+======================================================*/
+
+.work_eye_catch {
+  height: 300px;
+  background-image: url(../images/work.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: #1482e9 2px 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .report {
   border: 1px solid #ccc;
   padding: 40px;
